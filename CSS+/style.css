@@ -1,0 +1,273 @@
+#titulo {
+    color: rgb(0, 139, 42);
+}
+
+p.especial {
+    color: blueviolet;
+}
+
+p.texto {
+    color: rgb(221, 22, 32);
+}
+
+div p {
+    color: rgb(221, 210, 240);
+}
+
+div h2, div h3 {
+    color: crimson;
+}
+
+* {
+    font-size: 24px;
+    /*color: darkorange; /* comentario */
+}
+
+/* Comentario prueba 1*/
+
+/*
+Esto es un comentario de prueba 1
+que esta 
+con muchas lineas 
+Si
+
+*/
+
+.color {
+    border-style: solid;
+    border-color: blue;
+    border-radius: 5px;
+    border-width: 5px;
+    /*border: 5px rgb(0, 0, 0) outset;*/
+}
+
+#fondo {
+    background-color: brown;
+    /*opacity: 0.3;*/
+    height: 200px;
+    background: #f00 url(cuanto-frio-hace-en-el-espacio-exterior.webp) repeat-y center bottom / 100px 100px;
+
+}
+
+.margen {
+    background-color: chartreuse;
+    margin: 15px;
+    padding: 30px 15px 5px;
+    border: solid 1px black;
+    height: 100px;
+    width: 50px;
+    overflow: scroll;
+    outline: 1px solid red;
+}
+
+.text {
+    font-family: 'Times New Roman', Times, serif;
+    text-align:justify;
+    text-decoration: overline;
+    text-shadow: 3px 5px 5px blue;
+}
+
+a:link {
+    color: blue;
+}
+
+a:visited {
+    color: blueviolet;
+}
+
+a:hover {
+    color: chartreuse;
+}
+
+a:active {
+    color: cyan;
+}
+
+ul {
+    background-color: aqua;
+    list-style-type: georgian;
+    /*padding-left: 0;*/
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+th, td {
+    border: solid 1px black;
+    padding: 5px;
+}
+
+th {
+    background-color: rgb(68, 0, 255);
+    color: white;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #eee;
+}
+
+tr:hover{
+    background-color: rgb(100, 139, 173);
+    cursor: pointer;
+}
+
+span {
+    display: block;
+    /*display: none;*/
+    /*visibility: hidden;*/
+    max-width: 300px;
+    background-color: blue;
+}
+
+
+.inline {
+    display: inline;
+}
+
+#position {
+    position: sticky;
+    left: 20px; 
+    top: 25px;
+}
+
+.left {
+    float: left;
+    width: 200px;
+    height: 200px;
+}
+
+.right {
+    float: right;
+}
+.container {
+    height: 200px;
+}
+
+.column {
+
+    margin: 0;
+    padding: 10px 0px;
+    width: 33.3%;
+}
+
+.inline-block {
+    display: inline-block;
+    height: 55px;
+    background-color: blue;
+}
+
+
+.center {
+    
+    position: sticky;
+    left: 15px; 
+    top: 0px;
+    background: radial-gradient(circle, #665d68, #949094);
+    color: aliceblue;
+    padding: 2px 0;
+    text-align: center;
+    width: 1300px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.imagencen {
+    display: block;
+        margin: 0 auto;
+        max-width: 50%; /* La imagen no excederá el 50% del ancho de su contenedor */
+        height: auto;
+        display: block;
+        margin: 20px auto; /* Agrega 20px de espacio alrededor de la imagen y la centra */
+        max-width: 100%; /* Ajusta el tamaño para que no exceda el contenedor */
+        height: auto;
+}
+
+.contenedor-imagen-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imagencen {
+    max-width: 80%; /* Ajusta el ancho según necesites */
+    height: auto;
+}
+
+.texto-descripcion {
+    max-width: 80%; /* Limita el ancho del texto al de la imagen */
+    text-align: center; /* Centra el texto */
+    margin-top: 10px; /* Espacio entre la imagen y el texto */
+    color: white;
+    font-size: 18px;
+}
+
+.contenedor-imagen-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilo para la imagen con efecto de zoom */
+.imagencen {
+    max-width: 80%; /* Tamaño inicial de la imagen */
+    height: auto;
+    transition: transform 0.3s ease; /* Transición suave para el zoom */
+}
+
+/* Efecto de zoom al pasar el cursor */
+.imagencen:hover {
+    transform: scale(1.1); /* Aumenta la imagen al 110% */
+}
+
+/* Configuración para el contenedor de partículas */
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Asegúrate de que esté detrás del contenido */
+}
+
+/* Estilo para el contenido, similar al que ya tienes */
+.contenedor-imagen-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    position: relative;
+    z-index: 1; /* Asegura que el contenido esté sobre las partículas */
+}
+
+.link3:visited{
+    color: #eee;
+
+}
+
+/* Estilo para el encabezado */
+#encabezado {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* Color con transparencia */
+    color: #00ffff;
+    text-align: center;
+    transition: padding 0.3s ease, background-color 0.3s ease;
+    z-index: 1000; /* Asegura que el encabezado esté en la capa superior */
+}
+
+/* Cambia el tamaño del encabezado cuando se desplaza */
+
+.encabezado-scroll {
+    padding: 10px; /* Reduce el tamaño del encabezado */
+    background-color: rgba(0, 0, 0, 0.85); /* Fondo más oscuro cuando se desplaza */
+}
+
+.contenido {
+    margin-top: 80px;
+}

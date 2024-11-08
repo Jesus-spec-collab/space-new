@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Practica CSS</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body> 
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const encabezado = document.getElementById("encabezado");
+    
+            window.addEventListener("scroll", function() {
+                if (window.scrollY > 50) {
+                    encabezado.classList.add("encabezado-scroll");
+                } else {
+                    encabezado.classList.remove("encabezado-scroll");
+                }
+            });
+        });
+    </script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Contenedor para partículas -->
+    <div id="particles-js"></div>
+
+    <!-- Contenido de tu página -->
+    <div class="contenedor-imagen-texto">
+        
+
+    <head>
+        <!-- Enlace a Particles.js desde CDN -->
+        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    </head>
+<script>
+    particlesJS("particles-js", {
+        "particles": {
+            "number": {
+                "value": 100, // Número de partículas
+                "density": {
+                    "enable": true,
+                    "value_area": 800
+                }
+            },
+            "color": {
+                "value": "#ffffff"
+            },
+            "shape": {
+                "type": "circle",
+                "stroke": {
+                    "width": 0,
+                    "color": "#000000"
+                }
+            },
+            "opacity": {
+                "value": 0.5,
+                "random": false,
+                "anim": {
+                    "enable": false,
+                    "speed": 1,
+                    "opacity_min": 0.1,
+                    "sync": false
+                }
+            },
+            "size": {
+                "value": 3,
+                "random": true,
+                "anim": {
+                    "enable": false,
+                    "speed": 40,
+                    "size_min": 0.1,
+                    "sync": false
+                }
+            },
+            "line_linked": {
+                "enable": true,
+                "distance": 150,
+                "color": "#ffffff",
+                "opacity": 0.4,
+                "width": 1
+            },
+            "move": {
+                "enable": true,
+                "speed": 3,
+                "direction": "none",
+                "random": false,
+                "straight": false,
+                "out_mode": "out",
+                "bounce": false,
+                "attract": {
+                    "enable": false,
+                    "rotateX": 600,
+                    "rotateY": 1200
+                }
+            }
+        },
+        "interactivity": {
+            "detect_on": "canvas",
+            "events": {
+                "onhover": {
+                    "enable": true,
+                    "mode": "repulse"
+                },
+                "onclick": {
+                    "enable": true,
+                    "mode": "push"
+                },
+                "resize": true
+            },
+            "modes": {
+                "grab": {
+                    "distance": 400,
+                    "line_linked": {
+                        "opacity": 1
+                    }
+                },
+                "bubble": {
+                    "distance": 400,
+                    "size": 40,
+                    "duration": 2,
+                    "opacity": 8,
+                    "speed": 3
+                },
+                "repulse": {
+                    "distance": 100,
+                    "duration": 0.4
+                },
+                "push": {
+                    "particles_nb": 4
+                },
+                "remove": {
+                    "particles_nb": 2
+                }
+            }
+        },
+        "retina_detect": true
+    });
+</script>
+    
+
+    <style>
+        body {
+            background: radial-gradient(circle, #1b1b1d, #2f303b); /* Cambia los colores según lo que desees */
+        }
+    </style>
+    <section class="center">
+        <a href="https://www.youtube.com/watch?v=aFJ0AxK22ts" class="link3"><p class="encabezado"> Sobre El Sistema Solar </p></a> 
+    </section>
+    <div class="contenido" style="margin-top: 100px;">
+        <!-- Espacio adicional para que no se superponga inmediatamente con el encabezado -->
+        <p>Texto o contenido inicial...</p>
+        <!-- Imagen del sistema solar -->
+        <img src="cuanto-frio-hace-en-el-espacio-exterior.webp" alt="Sistema Solar" style="display: block; margin: 0 auto;">
+        <!-- Resto del contenido -->
+        <p>Más información aquí...</p>
+    </div>
+</body>
+    <div class="contenedor-imagen-texto">
+        <div class="texto-descripcion">
+            <p>El espacio exterior, espacio vacío, espacio sidéreo, espacio sideral o simplemente espacio, se refiere a las regiones relativamente vacías del universo fuera de las atmósferas de los cuerpos celestes. Se usa «espacio exterior» para distinguirlo del espacio aéreo y las zonas terrestres.</p>>
+        </div>
+    </div>
+        <img src="cuanto-frio-hace-en-el-espacio-exterior.webp" alt="Descripción de la imagen"style="width: 300px; height: auto;" class="imagencen">
+        <div style="padding-top: 20px;">
+
+    </div>
+    
+    <div class="container">
+    <div class="inline-block">Inline Block</div>
+    <div class="inline-block">Inline block 2</div>
+    <div class="container"> 
+        <article class="column rigth">1</article>
+        <article class="column rigth">2</article>
+        <article class="column rigth">3</article>
+    </div>
+
+    </div>
+    <div class="inline">Sip</div>
+    <div class="inline">Sep</div>
+    <span class="span">span 1</span>
+    <span class="span">span 2</span>
+    <article id="position">Soy Pocicion</article>
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+        </tr>
+        <tr>
+            <td>Jesus</td>
+            <td>Vasquez</td>
+        </tr>
+        <tr>
+            <td>Jose</td>
+            <td>Perez</td>
+        </tr>
+        <tr>
+            <td>Luis</td>
+            <td>Reyes</td>
+        </tr>
+    </table>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+    <a href="https://x.com/home">X</a>
+    <p class="text">esto es un texto llllllllllllllllllllllllllllllllllllllllllllllllllllllllllll</p>
+    <div class="margen">
+        margen de fondo 
+    </div>
+    <article id="fondo">
+        Soy la propiedad de color de backgroud 
+    </article>
+    <h1 class="color">Propiedad de color</h1>
+    <h1 id="titulo">Titulo</h1>
+    <p class="texto">Texto Parrafo prueba</p>
+    <p class="texto especial">Texto Parrafo prueba</p>
+    <p class="especial">Texto Parrafo prueba</p>
+    <div>
+        <p>Hola</p>
+        <h2>Subtitulo</h2>
+        <h3>subsub titulo</h3>
+    </div>
+</body>
+</html>
